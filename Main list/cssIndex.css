@@ -4,6 +4,7 @@ body{
 }
 html{
     height: 100%;
+    margin: 0;
 }
 
 p{
@@ -193,6 +194,8 @@ p{
 }
 
 .collapsible {
+    position: relative;
+    flex: 1 1 auto;
     background-color:rgb(219, 152, 37);
     color: #444;
     cursor: pointer;
@@ -209,6 +212,7 @@ p{
 }
 
 .test{
+    position: relative;
     background-color: #433d36;
     padding: 20px;
   }
@@ -272,3 +276,4 @@ p{
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+
