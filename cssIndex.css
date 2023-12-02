@@ -4,12 +4,13 @@ body{
 }
 html{
     height: 100%;
-    margin: 0;
+    margin: 0;      
+    background-image: url(bg1.png);
+    background-size: cover;
 }
 
 p{
-    font-size: 24px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+
 }
 
 .wrapper{
@@ -35,21 +36,12 @@ p{
     height: 40;
 }
 
+
 .header-logo{
-    font-size: 50;
+    font-size: 25px;
+    padding: 20px;
 }
 
-.card{
-    justify-content: space-around;
-    display: flex;
-}
-
-.card img{
-    width: 35px;
-    height: 35px;
-    border: 50px;
-    border: #E9DFCB;
-}
 .header-line{
     width: 100%;
     max-width: 1920px;
@@ -63,17 +55,69 @@ p{
     height: 40;
 }
 
+.card{
+    justify-content: space-around;
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.card a{
+    text-decoration: none;
+}
+
+.card img{
+    width: 35px;
+    height: 35px;
+    border: 50px;
+    border: #E9DFCB;
+}
+
+.nav{
+    padding: 20px;
+    font-size: 25px;
+}
+
 .nav-item{
     align-items: center;
     font-size: 18px;
     text-decoration: none;
     margin-right: 24px;
     color: #E9DFCB;
+    padding: 20px;
 }
 .nav-item:hover{
     color: rgb(191, 216, 89);
     transition: color 0.5 linear;
 }
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    color: white;
+  }
+
+  
+  .fa-youtube {
+    color: white;
+  }
+  
+.fa-instagram{
+    color: white;
+}  
+
 .header-down{
     background-color: #242322;
     position:relative;
@@ -82,15 +126,7 @@ p{
     flex:1  auto;
 
 }   
-.footer{
-    display: inline-flex;
-    flex: 1 1 auto;
-    position: relative;
-    background-color: #242322;
-    color: white;
-    padding-top: 30px;
 
-}
 .header-title{
     color:#E9DFCB;
     padding-left:50px ;
@@ -103,6 +139,16 @@ p{
 
     font-size: 18px;
     color: white;
+}
+
+.footer{
+    display: inline-flex;
+    flex: 1 1 auto;
+    position: relative;
+    background-color: #242322;
+    color: white;
+    padding-top: 30px;
+
 }
 
 .main{
@@ -121,16 +167,17 @@ p{
     text-align: center;
     font-weight: 900;
     padding-bottom: 40px;
-    margin-top: 50px;
+    margin-top: 200px;
+    
 }
-
-
 
 .main-desc{
     width: 960px;
-    height: 610px;
+    height: 400px;
     text-align: center;
     font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+
 }
 
 .main-holder{
@@ -205,16 +252,21 @@ p{
     text-align: left;
     outline: none;
     font-size: 15px;
-  }
+}
+
 
 .active, .collapsible:hover {
     background-color: #ccc;
 }
-
+  
 .test{
     position: relative;
     background-color: #433d36;
     padding: 20px;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
   }
 
 .question {
@@ -259,6 +311,18 @@ p{
     content: "";
     position: absolute;
     display: none;
+  }
+
+  .collapsible:after {
+    content: '\02795'; 
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: '\2796'; 
   }
 
   .question input:checked ~ .checkmark:after {

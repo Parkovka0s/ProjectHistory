@@ -1,0 +1,282 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    background-repeat: no-repeat;
+    background-size: 10000px;
+    margin: 0px;
+
+}
+
+
+.main{
+    padding-top:50px ;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+
+.container{
+    margin: 0px ;
+    width: auto;
+    max-width: 1920px;
+    height: auto;
+    position:static
+}
+
+.wrapper{
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(gray, brown);
+}
+
+.footer{
+    display: inline-flex;
+    flex: 1 1 auto;
+    position: relative;
+    background-color: #242322;
+    color: white;
+    padding-top: 30px;
+}
+
+.footer-text{
+    display: inline-flex;
+    flex: 1 1 auto;
+    position: relative;
+    background-color: #242322;
+    color: white;
+    padding-top: 30px;
+}
+
+.header{
+    background-color: #242322;
+    position: fixed;
+    justify-content: end;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+}
+
+.header-logo{
+  font-size: 25px;
+  padding: 20px;
+}
+
+.goBack{
+  font-size: 25px;
+  padding:20px ;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 2px solid sandybrown;
+  text-align: center;
+}
+
+.card{
+  justify-content: space-around;
+  display: flex;
+  text-decoration: none;
+  color: white;
+}
+
+.card a{
+  text-decoration: none;
+}
+
+.card img{
+  width: 35px;
+  height: 35px;
+  border: 50px;
+  border: #E9DFCB;
+}
+
+.nav{
+  padding: 20px;
+  font-size: 25px;
+}
+
+.nav-item{
+  align-items: center;
+  font-size: 18px;
+  text-decoration: none;
+  margin-right: 24px;
+  color: #E9DFCB;
+  padding: 20px;
+}
+.nav-item:hover{
+  color: rgb(191, 216, 89);
+  transition: color 0.5 linear;
+}
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  color: white;
+}
+
+
+.fa-youtube {
+  color: white;
+}
+
+.fa-instagram{
+  color: white;
+}  
+
+.header-line{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;;
+  z-index: 10;
+  height: 40;
+  background: linear-gradient(black, #242322);
+}
+
+h1 {
+     margin: 0;
+ }
+
+.img{
+    width: 480px;
+    height: 480px;
+}
+
+.holder{
+    display: flex;
+    justify-content: space-between ;
+    width: 100%;
+    height: 600px;
+}
+
+.main-text{
+  color: white;
+  height: 50%px;
+  width: 50%;
+  text-align: center;
+  font-size: 25px;
+  background-color: #3b3631;
+  border: 2px solid #3b3631;
+  border-radius: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.main-name{
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  padding: 30px;
+  margin: 50px;
+  background: linear-gradient(black, #242322);
+  border-radius: 300px;
+}
+.map img{
+  width: 100%;
+  border-radius:50px ;
+}
+
+  
+  .slider-container {
+    position: relative;
+    width: 900px;
+    height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50px;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .prev-button {
+    left: 10px;
+  }
+  
+  .next-button {
+    right: 10px;
+  }
+
+  .slider-container2 {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .slider2 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .prev-button2,
+  .next-button2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .prev-button2 {
+    left: 10px;
+  }
+  
+  .next-button2 {
+    right: 10px;
+  }
+
