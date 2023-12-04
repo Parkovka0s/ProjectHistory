@@ -118,6 +118,7 @@ p{
     color: white;
 }  
 
+
 .header-down{
     background-color: #242322;
     position:relative;
@@ -127,6 +128,16 @@ p{
 
 }   
 
+.header__btn{
+    margin-top: 20px;
+    font-size: 25px;
+    color: white;
+    width: 40px;
+    height: 30px;
+    background: none;
+    border: none;
+}
+
 .header-title{
     color:#E9DFCB;
     padding-left:50px ;
@@ -134,10 +145,16 @@ p{
     padding-top: 150px ;
 }
 
+.header-subName{
+    color:#E9DFCB;
+    padding-left:50px ;
+    font-size: 40px;
+}
 
 .header-suptitle{
-
-    font-size: 18px;
+    margin-left:50px ;
+    padding-top: 100px;
+    font-size: 22px;
     color: white;
 }
 
@@ -240,104 +257,27 @@ p{
     transition: color 0.5 linear;
 }
 
-.collapsible {
-    position: relative;
-    flex: 1 1 auto;
-    background-color:rgb(219, 152, 37);
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
+
+.testBlock{
     width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-}
-
-
-.active, .collapsible:hover {
-    background-color: #ccc;
-}
-  
-.test{
-    position: relative;
-    background-color: #433d36;
+    max-width: 1920px;
+    background-color: #242322;
     padding: 20px;
-    padding: 0 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
-
-.question {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.question input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-}
-
-.question:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
-  
-  .question input:checked ~ .checkmark {
-    background-color: #2196F3;
-  }
-
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-
-  .collapsible:after {
-    content: '\02795'; 
-    font-size: 13px;
     color: white;
-    float: right;
-    margin-left: 5px;
-  }
-  
-  .active:after {
-    content: '\2796'; 
-  }
+}
 
-  .question input:checked ~ .checkmark:after {
-    display: block;
-  }
+.testText{
+    font-size: 25px;
+    width: 50%;
+    color: white;
+    margin: 20px 20px 20px 0;
+    padding: 10px 10px 10px 0;
+}
 
-  .question .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-
+.testBlock a{
+    font-size: xx-large;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 15px;
+    margin-top: 15px;
+}
